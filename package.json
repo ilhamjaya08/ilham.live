@@ -32,7 +32,11 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@types/node": "^22.5.2",
+		"clsx": "^2.1.1",
 		"hono": "^4.5.10",
-		"svelte-typewriter": "^3.2.3"
+		"svelte-motion": "^0.12.2",
+		"svelte-typewriter": "^3.2.3",
+		"tailwind-merge": "^2.5.2"
 	}
 }
