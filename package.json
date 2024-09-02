@@ -32,6 +32,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"hono": "^4.5.10"
+		"hono": "^4.5.10",
+		"svelte-typewriter": "^3.2.3"
 	}
 }
