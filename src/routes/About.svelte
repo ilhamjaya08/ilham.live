@@ -22,5 +22,68 @@
         <h1 class='font-suse font-extrabold text-3xl'> 
             <Comment name='Bio' />
         </h1>
+
+        <div class='mt-6'>
+            <p class='text-xl mt-2 font-bold font-mono'>
+                Muhammad Ilham Jaya 
+                <span class='text-sm'>
+                    is my full name
+                </span>
+            </p>
+        
+            <p class='text-sm mt-2 font-bold font-mono flex items-center'>
+                <span>I was born on</span>
+                <span class='text-xl flex items-center ml-2'>
+                    March 18, 2008 
+                </span>
+            </p>
+        
+            <p class='text-sm mt-2 font-bold font-mono flex items-center'>
+                <span>I live in</span>
+                <span class='text-xl flex items-center ml-2'>
+                    Karanganyar, Central Java, Indonesia 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 72 72" class="ml-1">
+                        <path fill="#d22f27" d="M5 17h62v38H5z" />
+                        <path fill="#fff" d="M5 36h62v19H5z" />
+                        <path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 17h62v38H5z" />
+                    </svg>
+                </span>
+            </p>
+        
+            <p class='text-sm mt-2 font-bold font-mono flex items-center'>
+                <span class='text-xl flex items-center ml-2'>
+                    Software Developer  
+                </span>
+                <span> &nbsp;is my Occupation</span>
+            </p>
+        
+            <p class='text-sm mt-2 font-bold font-mono flex items-center'>
+                <span>I'm</span>
+                <span class='text-xl flex items-center ml-2'>
+                    Software Engineering Student
+                </span>
+                <span>
+                    &nbsp;at
+                </span>
+                <span class='text-xl flex items-center ml-2'>
+                    SMK Negeri 5 Surakarta
+                </span>
+            </p>
+        
+            <p class='text-sm mt-2 font-bold font-mono flex items-center'>
+                <span>I have several hobbies such as</span>
+                <span class='text-xl flex items-center ml-2'>
+                    Playing video games, Coding, and reading any science books/article
+                </span>
+            </p>
+        
+            <p class='text-sm mt-2 font-bold font-mono flex items-center'>
+                <span>I can speak in</span>
+                <span class='text-xl flex items-center ml-2'>
+                    Indonesian (Native), Javanese (Daily-Native), English and Arabic (Basic), 
+                </span>
+            </p>
+        </div>
+        
     </div>
 </article>
