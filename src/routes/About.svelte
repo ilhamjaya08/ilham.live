@@ -2,8 +2,15 @@
 
 </script>
 
-<article id='about' class='bg-[#6c63ff] py-12 text-white'>
-    <div class='bg-base-200 px-4 mx-auto w-full md:max-w-3xl lg:max-w-6xl'>
-        
+<article id='about' class='bg-[#6c63ff] py-8'>
+    <div class='px-4 mx-auto w-full md:max-w-3xl lg:max-w-6xl'>
+        <h1 class='font-suse font-extrabold text-3xl'>
+            Who Am I?
+        </h1>
+        <p class='mt-4 font-mono '>
+            I'm a junior software engineer with a passion for building scalable and efficient systems.
+            I have experience in the world of advanced programming for approximately 1 year.
+            I have started game server scripting since 2020, and slowly I stepped into the realm of web and mobile programming.
+        </p>
     </div>
 </article>
