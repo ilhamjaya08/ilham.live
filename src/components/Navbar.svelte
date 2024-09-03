@@ -1,6 +1,8 @@
 <script>
     import Fragment from "./Fragment.svelte";
-    import { CardItem, CardBody, CardContainer } from '../components/ui/ThreeDCardEffect';
+    import CardBody from "./ui/ThreeDCardEffect/CardBody.svelte";
+    import CardContainer from "./ui/ThreeDCardEffect/CardContainer.svelte";
+    import CardItem from "./ui/ThreeDCardEffect/CardItem.svelte";
     
     let isMouseEntered = false;
 </script>
