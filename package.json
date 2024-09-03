@@ -35,6 +35,7 @@
     "@types/node": "^22.5.2",
     "clsx": "^2.1.1",
     "hono": "^4.5.10",
+    "lucide-svelte": "^0.438.0",
     "svelte-motion": "^0.12.2",
     "svelte-typewriter": "^3.2.3",
     "tailwind-merge": "^2.5.2"
