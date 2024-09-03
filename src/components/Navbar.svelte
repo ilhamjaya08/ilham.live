@@ -76,6 +76,7 @@
             <button class="btn join-item">About</button>
             <button class="btn join-item">Blog</button>
             <button class="btn join-item">Contact</button>
+            <button class="btn join-item">Resume</button>
             <button class="btn join-item">Support Me</button>
             <button class="btn join-item">Leave a message</button>
             <button class="btn join-item">Site's Source Code❤</button>
