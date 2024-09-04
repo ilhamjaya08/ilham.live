@@ -9,8 +9,11 @@
         description: 'an API services for username validation of several digital services, like uid games, e-money, bank accounts, electricity customers, and others.',
         imageUrl: 'https://telegra.ph/file/334e591ddc365386cd60d.jpg',
         imageAlt: 'Image',
-        tags: ['Flowbite', 'SvelteKit', 'TailwindCSS', 'Hono', 'Bun'],
-        url: 'https://cek-username.vercel.app'
+        tags: ['Flowbite', 'SvelteKit', 'TailwindCSS', 'Hono', 'Bun', 'Web'],
+        url: 'https://cek-username.vercel.app',
+        isOpenSource: true,
+        isOnline: true,
+        repo: 'https://github.com/ilhamjaya08/cek-username'
       },
       {
         name: 'Bun Discord',
@@ -18,9 +21,11 @@
         imageUrl: 'https://telegra.ph/file/d4954dc4e3ed4376278a1.png',
         imageAlt: 'Bun Discord',
         tags: ['Discord.js', 'Bun', 'Bot'],
-        url: 'https://github.com/ilhamjaya08/bun-discord'
+        url: 'https://github.com/ilhamjaya08/bun-discord',
+        isOpenSource: true,
+        isOnline: true,
+        repo: 'https://github.com/ilhamjaya08/bun-discord'
       }
-      // Tambahkan proyek lain sesuai kebutuhan
     ];
   </script>
   
@@ -38,6 +43,9 @@
             imageAlt={project.imageAlt}
             tags={project.tags}
             url={project.url}
+            isOpenSource={project.isOpenSource}
+            repo={project.repo}
+            isOnline={project.isOnline}
           />
         {/each}
       </div>
