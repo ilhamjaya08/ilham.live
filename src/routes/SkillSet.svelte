@@ -29,6 +29,7 @@
     { name: 'Actions', icon: 'devicon:githubactions' },
     { name: 'Docker', icon: 'devicon:docker' },
     { name: 'Vercel', icon: 'devicon:vercel' },
+    { name: 'GitHub', icon: 'devicon:github' },
     { name: 'cPanel', icon: 'logos:cpanel' },
     { name: 'Linux', icon: 'devicon:linux' },
     { name: 'Heroku', icon: 'devicon:heroku' },
@@ -40,6 +41,14 @@
     { name: 'PostgreSQL', icon: 'logos:postgresql' },
     { name: 'Prisma', icon: 'logos:prisma' },
     { name: 'TypeOrm', icon: 'logos:typeorm' },
+    ];
+    const tools = [
+    { name: 'VSCode', icon: 'devicon:vscode' },
+    { name: 'Laragon', icon: 'simple-icons:laragon' },
+    { name: 'Git', icon: 'devicon:git' },
+    { name: 'Postman', icon: 'devicon:postman' },
+    { name: 'Android Studio', icon: 'devicon:androidstudio' },
+    { name: 'Neovim', icon: 'devicon:neovim' },
     ];
 </script>
 
@@ -63,6 +72,9 @@
             </li>
             <li class="md:basis-1/2 md:px-2">
                 <StackItemCard name='Databases & ORM' tools={db} wide={true}  />
+            </li>
+            <li class="md:basis-1/2 md:px-2">
+                <StackItemCard name='Tools & Software' tools={tools} wide={true}  />
             </li>
         </ul>
     </div>

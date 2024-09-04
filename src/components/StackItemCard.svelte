@@ -1,9 +1,20 @@
 <script lang="ts">
-  import Icon from "@iconify/svelte";
+    import Icon from "@iconify/svelte";
 
     export let name: string;
     export let tools: { icon: any; name: string }[] = [];
     export let wide = false;
+    
+    function formatText(text: string): (string | HTMLBRElement)[] {
+        return text.split(' ').flatMap((word, index, array) => {
+        const result: (string | HTMLBRElement)[] = [word];
+        if (index < array.length - 1) {
+            const br = document.createElement('br');
+            result.push(br);
+        }
+        return result;
+        });
+    }
 </script>
 
 <article class="p-4 rounded-md border-base-content border-2 space-y-4 md:h-full transition">
@@ -16,7 +27,15 @@
         <li class={`basis-1/2 ${wide ? 'md:basis-1/3 lg:basis-1/4' : 'md:basis-full lg:basis-1/2'}`}>
           <div class="p-2 space-x-4 cursor-default group">
             <Icon icon={tool.icon} class="inline-block w-6 h-6 md:w-8 md:h-8" />
-            <p class="font-suse inline-block decoration-accent group-hover:underline font-bold text-xsm">{tool.name}</p>
+            <p class="font-suse inline-block decoration-accent group-hover:underline font-bold text-xsm">
+                {#each formatText(tool.name) as part}
+                {#if typeof part === 'string'}
+                  {part}
+                {:else}
+                  {@html part.outerHTML}
+                {/if}
+              {/each}
+            </p>
           </div>
         </li>
       {/each}
