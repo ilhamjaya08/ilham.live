@@ -43,5 +43,6 @@
   },
   "trustedDependencies": [
     "svelte-preprocess"
-  ]
+  ],
+  "prepare": "svelte-kit sync"
 }
