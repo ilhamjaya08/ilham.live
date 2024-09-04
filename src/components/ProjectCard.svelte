@@ -19,7 +19,7 @@
   >
     <div>
       <header>
-        <h4 class="text-xl font-bold my-2 decoration-2 decoration-secondary group-hover:underline">
+        <h4 class="text-xl font-bold my-2 decoration-2 decoration-secondary">
           {name}
         </h4>
       </header>
@@ -29,7 +29,7 @@
           alt={imageAlt}
           class="rounded border-2 border-black grayscale group-hover:grayscale-0 group-active:border-secondary transition"
         />
-        <p class="my-4">{description}</p>
+        <p class="my-4 font-mono text-sm">{description}</p>
       </div>
     </div>
     <footer>
@@ -41,9 +41,9 @@
       <div class="flex justify-end">
         <button
           type="button"
-          class="btn btn-ghost group-hover:btn-link group-active:text-secondary-content hover:decoration-secondary"
+          class="btn bg-[#2eacff] group-active:text-secondary-content"
         >
-          Check it out
+          GO HERE
         </button>
       </div>
     </footer>

@@ -5,12 +5,12 @@
     // Contoh data proyek
     const projects = [
       {
-        name: 'Project One',
-        description: 'This is the description for Project One.',
-        imageUrl: 'https://via.placeholder.com/150',
-        imageAlt: 'Project One Image',
-        tags: ['React', 'Svelte', 'CSS'],
-        url: 'https://example.com/project-one'
+        name: 'Cek Username API',
+        description: 'an API services for username validation of several digital services, like uid games, e-money, bank accounts, electricity customers, and others.',
+        imageUrl: 'https://telegra.ph/file/334e591ddc365386cd60d.jpg',
+        imageAlt: 'Image',
+        tags: ['Flowbite', 'SvelteKit', 'TailwindCSS', 'Hono', 'Bun'],
+        url: 'https://cek-username.vercel.app'
       },
       {
         name: 'Project Two',
@@ -43,8 +43,4 @@
       </div>
     </div>
   </article>
-  
-  <style>
-    /* Add your styles here */
-  </style>
   
