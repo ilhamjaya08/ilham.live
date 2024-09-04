@@ -27,7 +27,7 @@
         <img
           src={imageUrl}
           alt={imageAlt}
-          class="rounded border-2 border-black grayscale group-hover:grayscale-0 group-active:border-secondary transition"
+          class="rounded border-2 w-[16rem] h-[16rem] border-black grayscale group-hover:grayscale-0 group-active:border-secondary transition"
         />
         <p class="my-4 font-mono text-sm">{description}</p>
       </div>

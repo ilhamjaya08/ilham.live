@@ -13,12 +13,12 @@
         url: 'https://cek-username.vercel.app'
       },
       {
-        name: 'Project Two',
-        description: 'This is the description for Project Two.',
-        imageUrl: 'https://via.placeholder.com/150',
-        imageAlt: 'Project Two Image',
-        tags: ['Node.js', 'Express', 'MongoDB'],
-        url: 'https://example.com/project-two'
+        name: 'Bun Discord',
+        description: 'Fast & Lightweight Discord Bot written and run on Bun',
+        imageUrl: 'https://telegra.ph/file/d4954dc4e3ed4376278a1.png',
+        imageAlt: 'Bun Discord',
+        tags: ['Discord.js', 'Bun', 'Bot'],
+        url: 'https://github.com/ilhamjaya08/bun-discord'
       }
       // Tambahkan proyek lain sesuai kebutuhan
     ];
