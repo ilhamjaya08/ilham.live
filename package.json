@@ -36,6 +36,7 @@
     "@sveltejs/adapter-vercel": "^5.4.3",
     "@types/node": "^22.5.2",
     "clsx": "^2.1.1",
+    "estree-walker": "^3.0.3",
     "hono": "^4.5.10",
     "lucide-svelte": "^0.438.0",
     "svelte-motion": "^0.12.2",
@@ -43,6 +44,8 @@
     "tailwind-merge": "^2.5.2"
   },
   "trustedDependencies": [
+    "@sveltejs/kit",
+    "esbuild",
     "svelte-preprocess"
   ],
   "prepare": "svelte-kit sync"
