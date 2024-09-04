@@ -11,8 +11,3 @@
 .no-visible-scrollbar::-webkit-scrollbar {
 	display: none;
 }
-
-.text-xsm {
-    font-size: 0.675rem;
-    line-height: 1rem;
-}

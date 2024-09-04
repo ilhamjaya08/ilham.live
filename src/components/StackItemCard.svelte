@@ -42,3 +42,12 @@
     </ul>
   </div>
 </article>
+
+
+<style>
+
+.text-xsm {
+    font-size: 0.675rem;
+    line-height: 1rem;
+}
+</style>
