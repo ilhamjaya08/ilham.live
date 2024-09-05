@@ -35,6 +35,8 @@
     "@iconify/svelte": "^4.0.2",
     "@sveltejs/adapter-vercel": "^5.4.3",
     "@types/node": "^22.5.2",
+    "axios": "^1.7.7",
+    "cheerio": "^1.0.0",
     "clsx": "^2.1.1",
     "estree-walker": "^3.0.3",
     "hono": "^4.5.10",
