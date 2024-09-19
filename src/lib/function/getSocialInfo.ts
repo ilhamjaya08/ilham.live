@@ -11,7 +11,7 @@ async function getInsta(user: string) {
     const $ = cheerio.load(html);
 
     const username = $('meta[property="og:title"]').attr('content')?.split(' ')[0] ?? '';
-    const name = $('meta[property="og:title"]').attr('content')?.split(' (')[0] ?? '';
+    const nickname = $('meta[property="og:title"]').attr('content')?.split(' (')[0] ?? '';
     const followers = $('meta[name="description"]').attr('content')?.match(/(\d+(?:,\d+)*) Followers/)?.[1] ?? '';
     const following = $('meta[name="description"]').attr('content')?.match(/(\d+(?:,\d+)*) Following/)?.[1] ?? '';
     let avatar = '';
@@ -20,7 +20,7 @@ async function getInsta(user: string) {
         avatar = JSON.parse(`"${match[1]}"`);
     }
 
-    return { username, name, followers, following, avatar };
+    return { username, nickname, followers, following, avatar };
 }
 
 async function getTiktok(user: string) {
@@ -80,12 +80,12 @@ async function getGithub(user: string) {
     const usernameMatch = html.match(/<span class="p-nickname vcard-username d-block" itemprop="additionalName">\s*(.*?)\s*<\/span>/);
     
     const bio = bioMatch ? bioMatch[1] : null;
-    const name = nameMatch ? nameMatch[1].trim() : null;
+    const nickname = nameMatch ? nameMatch[1].trim() : null;
     const username = usernameMatch ? usernameMatch[1].trim() : null;
     const followers = followersMatch ? followersMatch[1] : null;
     const following = followingMatch ? followingMatch[1] : null;
 
-    return { name, username, bio, followers, following }
+    return { nickname, username, bio, followers, following }
 }
 
 export { getInsta, getTiktok, getGithub }

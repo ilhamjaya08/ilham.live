@@ -30,7 +30,7 @@
             </svg>
           </button>
         </div>
-        <div class="flex-1">
+        <div class="flex-1 text-lg">
           <Fragment name='Ilham'/>
         </div>
         <div class="flex-none">
