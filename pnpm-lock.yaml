@@ -38,6 +38,9 @@ importers:
       mongoose:
         specifier: ^8.6.1
         version: 8.6.1
+      svelte-icons:
+        specifier: ^2.1.0
+        version: 2.1.0
       svelte-motion:
         specifier: ^0.12.2
         version: 0.12.2(svelte@4.2.19)
@@ -1820,6 +1823,9 @@ packages:
     engines: {node: ^12.20 || ^14.13.1 || >= 16}
     peerDependencies:
       svelte: ^3.19.0 || ^4.0.0
+
+  svelte-icons@2.1.0:
+    resolution: {integrity: sha512-rHPQjweEc9fGSnvM0/4gA3pDHwyZyYsC5KhttCZRhSMJfLttJST5Uq0B16Czhw+HQ+HbSOk8kLigMlPs7gZtfg==}
 
   svelte-motion@0.12.2:
     resolution: {integrity: sha512-7RrdRz9iVP55B9HT/C0hYW3pyrKlF61kAby/AkDtOAP0uHFQDrfd0qQetDC81cEsK9b40jt+jfcqSAXcA7LPEw==}
@@ -3811,6 +3817,8 @@ snapshots:
   svelte-hmr@0.16.0(svelte@4.2.19):
     dependencies:
       svelte: 4.2.19
+
+  svelte-icons@2.1.0: {}
 
   svelte-motion@0.12.2(svelte@4.2.19):
     dependencies:

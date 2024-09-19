@@ -53,6 +53,10 @@ const postsSchema = new mongoose.Schema({
     featuredImage: {
       type: String, 
       trim: true
+    },
+    like: {
+        type: Number,
+        default:  0
     }
   }, { timestamps: true });
   
