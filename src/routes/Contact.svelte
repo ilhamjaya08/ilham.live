@@ -66,53 +66,52 @@
     }
   ];
 </script>
-
-<article id='contact' class='bg-[#21faa7] dark:bg-[#1a8c5f] py-8'>
-  <div class='px-4 mx-auto w-full md:max-w-3xl lg:max-w-4xl'>
-    <h1 class="font-suse font-extrabold text-2xl mb-4 text-black dark:text-white">
-      <Fragment name="Social & Contacts" />
-    </h1>
+  <article id='contact' class='bg-[#21faa7] dark:bg-[#1a8c5f] py-8'>
+    <div class='px-4 mx-auto w-full md:max-w-3xl lg:max-w-6xl'>
+      <h1 class="font-suse font-extrabold text-3xl mb-4 text-black dark:text-white">
+        <Fragment name="Social & Contacts" />
+      </h1>
     
-    <div class="space-y-4">
-      {#each socialConfig as { key, icon, color, buttonColor, url }}
-        <div class="p-3 rounded-md border border-black dark:border-white flex items-center justify-between group hover:bg-white dark:hover:bg-gray-800 transition-colors duration-300">
-          <div class="flex items-center space-x-4">
-            {#if socialData[key].avatar}
-              <img src={socialData[key].avatar} alt={`${key} avatar`} class="w-12 h-12 rounded-full" />
-            {:else}
-              <Icon {icon} class='w-12 h-12 {color} grayscale group-hover:grayscale-0 transition-all duration-300' />
-            {/if}
-            <div>
-              <h4 class="text-lg font-bold text-black dark:text-white">{socialData[key].nickname || socialData[key].username}</h4>
-              <p class="font-mono text-xs text-gray-600 dark:text-gray-400">@{socialData[key].username}</p>
+      <div class="space-y-4">
+        {#each socialConfig as { key, icon, color, buttonColor, url }}
+          <div class="p-3 rounded-md border border-black dark:border-white flex items-center justify-between group hover:bg-white dark:hover:bg-gray-800 transition-colors duration-300">
+            <div class="flex items-center space-x-4">
+              {#if socialData[key].avatar}
+                <img src={socialData[key].avatar} alt={`${key} avatar`} class="w-12 h-12 rounded-full" />
+              {:else}
+                <Icon {icon} class='w-12 h-12 {color} grayscale group-hover:grayscale-0 transition-all duration-300' />
+              {/if}
+              <div>
+                <h4 class="text-lg font-bold text-black dark:text-white">{socialData[key].nickname || socialData[key].username}</h4>
+                <p class="font-mono text-xs text-gray-600 dark:text-gray-400">@{socialData[key].username}</p>
+              </div>
+            </div>
+            <div class="flex flex-col items-end space-y-2">
+              <div class="flex flex-wrap gap-2 justify-end">
+                {#if socialData[key].followers !== undefined}
+                  <div class="badge badge-sm badge-outline text-black dark:text-white">{socialData[key].followers} Followers</div>
+                {/if}
+                {#if socialData[key].following !== undefined}
+                  <div class="badge badge-sm badge-outline text-black dark:text-white">{socialData[key].following} Following</div>
+                {/if}
+                {#if socialData[key].likes !== undefined}
+                  <div class="badge badge-sm badge-outline text-black dark:text-white">{socialData[key].likes} Likes</div>
+                {/if}
+              </div>
+              {#if socialData[key].bio}
+                <p class="text-xs text-gray-700 dark:text-gray-300 text-right">{socialData[key].bio}</p>
+              {/if}
+              <button
+                type="button"
+                class="btn btn-sm {buttonColor} text-white group-hover:bg-secondary group-hover:text-secondary-content transition-colors duration-300"
+                on:click={() => handleClick(url(socialData[key].username || ''))}
+                on:keydown={(e) => e.key === 'Enter' && handleClick(url(socialData[key].username || ''))}
+              >
+                Connect on {key.charAt(0).toUpperCase() + key.slice(1)}
+              </button>
             </div>
           </div>
-          <div class="flex flex-col items-end space-y-2">
-            <div class="flex flex-wrap gap-2 justify-end">
-              {#if socialData[key].followers !== undefined}
-                <div class="badge badge-sm badge-outline text-black dark:text-white">{socialData[key].followers} Followers</div>
-              {/if}
-              {#if socialData[key].following !== undefined}
-                <div class="badge badge-sm badge-outline text-black dark:text-white">{socialData[key].following} Following</div>
-              {/if}
-              {#if socialData[key].likes !== undefined}
-                <div class="badge badge-sm badge-outline text-black dark:text-white">{socialData[key].likes} Likes</div>
-              {/if}
-            </div>
-            {#if socialData[key].bio}
-              <p class="text-xs text-gray-700 dark:text-gray-300 text-right">{socialData[key].bio}</p>
-            {/if}
-            <button
-              type="button"
-              class="btn btn-sm {buttonColor} text-white group-hover:bg-secondary group-hover:text-secondary-content transition-colors duration-300"
-              on:click={() => handleClick(url(socialData[key].username || ''))}
-              on:keydown={(e) => e.key === 'Enter' && handleClick(url(socialData[key].username || ''))}
-            >
-              Connect on {key.charAt(0).toUpperCase() + key.slice(1)}
-            </button>
-          </div>
-        </div>
-      {/each}
+        {/each}
+      </div>
     </div>
-  </div>
-</article>
+  </article>
